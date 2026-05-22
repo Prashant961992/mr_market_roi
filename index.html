@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Market ROI - Course Brochure, Services & Community Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#10b981',      // Vibrant Emerald Green
+                            DEFAULT: '#0f2b48',    // Deep Navy Blue
+                            dark: '#0a192f',       // Ultra-Dark Navy Background accents
+                            accent: '#f59e0b',     // Premium Gold Accent
+                            emeraldDark: '#047857' // Deep Emerald Green
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom glowing text and border effects */
+        .text-glow {
+            text-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+        }
+        .border-glow-gold {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+        }
+        /* Premium custom scrollbar matching Mr Market ROI brand */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a192f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #10b981;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #047857;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Header / Nav -->
+    <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Mr Market ROI SVG Vector Logo Representation -->
+                <svg class="w-10 h-10" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer incomplete circle -->
+                    <path d="M 250,50 A 200,200 0 0,0 148,422" stroke="#0f2b48" stroke-width="22" stroke-linecap="round" />
+                    <path d="M 148,422 A 200,200 0 0,0 352,422" stroke="url(#greenGradient)" stroke-width="22" stroke-linecap="round" />
+                    <path d="M 352,422 A 200,200 0 0,0 320,58" stroke="url(#greenGradient)" stroke-width="22" stroke-linecap="round" />
+                    
+                    <!-- Left Blue 'M' -->
+                    <path d="M 100,250 L 100,150 L 180,150 L 230,230 L 280,150 L 300,150" stroke="#0f2b48" stroke-width="28" stroke-linejoin="round" stroke-linecap="round"/>
+                    <path d="M 100,250 L 100,320 M 100,320 L 80,320 M 100,320 L 120,320" stroke="#0f2b48" stroke-width="20" stroke-linecap="round"/>
+                    <path d="M 100,150 L 80,150 M 100,150 L 120,150" stroke="#0f2b48" stroke-width="20" stroke-linecap="round"/>
+                    
+                    <!-- Trend line Arrow slicing through -->
+                    <path d="M 150,330 Q 250,280 400,120" stroke="#10b981" stroke-width="20" fill="none" stroke-linecap="round"/>
+                    <path d="M 400,120 L 340,130 M 400,120 L 380,185" stroke="#10b981" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- Right Green 'M' -->
+                    <path d="M 300,200 L 350,150 L 400,150 L 440,250 L 440,320" stroke="#10b981" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+                    <path d="M 440,320 L 420,320 M 440,320 L 460,320" stroke="#10b981" stroke-width="18" stroke-linecap="round"/>
+                    
+                    <!-- Financial Candlesticks inside (Rising) -->
+                    <!-- Stick 1 -->
+                    <line x1="215" y1="280" x2="215" y2="330" stroke="#0f2b48" stroke-width="5" />
+                    <rect x="205" y="295" width="20" height="25" fill="#0f2b48" rx="2" />
+                    <!-- Stick 2 -->
+                    <line x1="250" y1="250" x2="250" y2="310" stroke="#10b981" stroke-width="5" />
+                    <rect x="240" y="265" width="20" height="30" fill="#10b981" rx="2" />
+                    <!-- Stick 3 -->
+                    <line x1="285" y1="230" x2="285" y2="290" stroke="#10b981" stroke-width="5" />
+                    <rect x="275" y="245" width="20" height="30" fill="#10b981" rx="2" />
+                    <!-- Stick 4 -->
+                    <line x1="320" y1="210" x2="320" y2="270" stroke="#0f2b48" stroke-width="5" />
+                    <rect x="310" y="225" width="20" height="30" fill="#0f2b48" rx="2" />
+                    
+                    <!-- Definitions for gradients -->
+                    <defs>
+                        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#10b981" />
+                            <stop offset="100%" stop-color="#047857" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="text-xl font-extrabold tracking-tight text-slate-900">Mr Market <span class="text-brand-light">ROI</span></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#services" class="hidden md:flex items-center space-x-1 font-bold text-xs text-slate-600 hover:text-brand-light transition mr-2">
+                    <i class="fa-solid fa-cubes text-brand-light"></i>
+                    <span>Our Services</span>
+                </a>
+                <a href="#community-hub" class="hidden md:flex items-center space-x-1 font-bold text-xs text-slate-600 hover:text-brand-light transition mr-2">
+                    <i class="fa-solid fa-users text-brand-light"></i>
+                    <span>Community Links</span>
+                </a>
+                <a href="#calculator" class="hidden lg:flex items-center space-x-1.5 text-xs font-bold text-slate-600 hover:text-brand-light transition mr-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-light opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-light"></span>
+                    </span>
+                    <span>ROI Calculator</span>
+                </a>
+                <a href="https://wa.me/919586551955" target="_blank" class="bg-brand-light hover:bg-brand-emeraldDark text-white font-semibold px-4 py-2 rounded-lg transition duration-200 flex items-center space-x-2 text-sm shadow-md">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Free Demo Class</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-dark text-white py-16 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.15),transparent)]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="bg-brand-light/20 text-brand-light font-semibold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-brand-light/30">Empowering Future Traders</span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mt-4 mb-6 leading-tight">
+                ULTIMATE GUIDE TO <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-emerald-400">GLOBAL MARKETS</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Empowering future traders through smart education, institutional frameworks, premium indicators, automated algorithms, and high-probability mechanical setups.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#services" class="w-full sm:w-auto bg-brand-light hover:bg-brand-emeraldDark text-white font-bold px-8 py-3.5 rounded-xl transition duration-200 shadow-lg text-center">
+                    Explore Services & Systems
+                </a>
+                <a href="#curriculum" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition duration-200 text-center">
+                    View Syllabus
+                </a>
+                <a href="#calculator" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition duration-200 text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calculator text-brand-light"></i>
+                    <span>Trading ROI Simulator</span>
+                </a>
+            </div>
+
+            <!-- Custom Elegant Logo Divider Ornament matching original branding -->
+            <div class="flex items-center justify-center gap-4 mt-12 text-brand-light/40">
+                <div class="h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-light/40"></div>
+                <svg class="w-16 h-8 text-brand-light" viewBox="0 0 100 30" fill="currentColor">
+                    <path d="M 50,5 L 58,15 L 50,25 L 42,15 Z" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="50" cy="15" r="2" fill="currentColor" />
+                    <path d="M 35,15 L 20,13 L 15,15 L 20,17 Z" fill="#0f2b48" />
+                    <path d="M 65,15 L 80,13 L 85,15 L 80,17 Z" fill="#10b981" />
+                    <line x1="5" y1="15" x2="30" y2="15" stroke="#0f2b48" stroke-width="1" />
+                    <line x1="70" y1="15" x2="95" y2="15" stroke="#10b981" stroke-width="1" />
+                </svg>
+                <div class="h-[1px] w-20 bg-gradient-to-l from-transparent to-brand-light/40"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="max-w-6xl mx-auto px-4 -mt-8 relative z-20">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="md:border-r border-slate-100 py-2">
+                <p class="text-4xl font-extrabold text-brand-light text-glow">2250+</p>
+                <p class="text-slate-500 text-sm font-medium mt-1">Successful Students Mentored</p>
+            </div>
+            <div class="md:border-r border-slate-100 py-2">
+                <p class="text-4xl font-extrabold text-slate-900">6+ Years</p>
+                <p class="text-slate-500 text-sm font-medium mt-1">Trading & Training Experience</p>
+            </div>
+            <div class="py-2">
+                <p class="text-4xl font-extrabold text-slate-900">500+ </p>
+                <p class="text-slate-500 text-sm font-medium mt-1">Traders Actively Trained</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="scroll-mt-20 mb-24">
+            <div class="text-center mb-12">
+                <span class="bg-brand-light/10 text-brand-light font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Our Professional Ecosystem</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-3">Tailored Professional Services</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+                    We are a professional trading and education company dedicated to helping you scale through expert market analysis, smart strategies, and automated technologies.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1: Forex Trading Education -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-brand-light flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Forex Trading Education</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Global Currency Market Basics</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Major & Minor Currency Pairs</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Trading Sessions & Flow Overviews</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Price Action & Trend Strategy</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Risk Management & Equity protection</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>Global Markets</span>
+                        <span class="text-brand-light">Institutional</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Indian Stock Market Training -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-[#0f2b48]/10 text-brand flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Indian Stock Market Training</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Equity Cash & Delivery Portfolios</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Nifty & BankNifty Index Analysis</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Futures & Options (F&O) Intraday</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Candlestick & Chart Patterns Delivery</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> High-probability stock scans</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>NSE / BSE</span>
+                        <span class="text-brand-light">Volume Flows</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Crypto Trading Education -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-brands fa-bitcoin"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Crypto Trading Education</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Cryptocurrency Market Fundamentals</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Technical & Advanced Price Action</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Spot vs. Futures Trading Blueprints</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Psychological Discipline and Habits</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Cold Storage Security & Web3 Basics</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>Digital Assets</span>
+                        <span class="text-brand-light">Web3 Markets</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Premium Trading Indicators -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Premium Trading Indicators</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Multi-Timeframe Trend Confirmation</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Institutional Order Block Alerts</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Fair Value Gap (FVG) Imbalance Maps</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Precise entry & exit signal generation</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Custom trading scripts & parameters</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>PineScript</span>
+                        <span class="text-brand-light">No Repaint</span>
+                    </div>
+                </div>
+
+                <!-- Service 5: Automated Algo Trading -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Automated Algo Trading</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Secure Exchange API Integration Setup</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Instant Auto Trade execution</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Fully systematic mathematical models</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Zero emotional or manual monitor bias</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Tension-free automated system runs</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>API Driven</span>
+                        <span class="text-brand-light">Rule Based</span>
+                    </div>
+                </div>
+
+                <!-- Service 6: Custom Trading Bot Development -->
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">Custom Bot Development</h3>
+                        <ul class="space-y-2 text-xs text-slate-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Personalized Strategy Code Translations</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Python, Node.js & MetaTrader Scripts</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Backtesting Frameworks & Metric Logs</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Custom risk parameters & slippage protection</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> High frequency execution models</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase font-bold text-slate-400">
+                        <span>Software Eng.</span>
+                        <span class="text-brand-light">Custom Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Curriculum Section -->
+        <section id="curriculum" class="scroll-mt-20">
+            <div class="text-center mb-12">
+                <span class="bg-brand-light/10 text-brand-light font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Course Blueprint</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-3">Comprehensive Course Modules</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
+                    A highly structured syllabus taking you from complete basics to institutional professional trading strategies.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- EXCLUSIVE ADVANCED STRATEGY: TRC (Trend-Range-Confluence) Strategy -->
+                <div class="bg-gradient-to-br from-[#0c243e] to-[#0a192f] text-white rounded-2xl shadow-xl p-6 sm:p-8 border-2 border-amber-500/60 relative overflow-hidden group hover:shadow-2xl hover:border-amber-500/100 transition-all duration-300 border-glow-gold">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-amber-500 text-slate-950 p-3 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/20">
+                            <i class="fa-solid fa-crosshairs text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Signature Proprietary Setup</span>
+                            <h3 class="text-xl font-bold text-white">Trend-Range-Confluence (TRC)</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        Unveil our highly unique, completely mechanical trading framework. Designed to pinpoint low-risk, explosive-growth turnarounds by synthesizing institutional vectors.
+                    </p>
+                    <ul class="space-y-3.5 text-slate-200">
+                        <li class="flex items-start text-sm">
+                            <span class="text-amber-400 mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Trend Alignment (T):</strong> Identifying master institutional directions using premium macro-level flows to ensure trading on the side of global bank algorithms.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-amber-400 mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Range Equilibrium (R):</strong> Isolating active dealing ranges. Strictly limiting entries to steep discount areas for buys and premium areas for shorts.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-amber-400 mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Confluence Confirmation (C):</strong> Lower timeframe execution triggers backed by structural liquidity hunts, FVG closures, and order block mitigations.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-amber-400 mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Rules-Based Invalidation:</strong> Standardized mathematics establishing exact, emotionless parameters for exit points and stop placement.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- NEW MODULE: Renko Strategy -->
+                <div class="bg-gradient-to-br from-slate-900 to-[#0f2b48] text-white rounded-2xl shadow-lg p-6 sm:p-8 border border-brand-light/20 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                    <div class="absolute right-0 top-0 transform translate-x-4 -translate-y-4 text-brand-light opacity-10 text-9xl font-bold">
+                        NEW
+                    </div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-brand-light text-white p-3 rounded-xl flex items-center justify-center shadow-lg shadow-brand-light/40">
+                            <i class="fa-solid fa-square-poll-vertical text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-light">Exclusive Addition</span>
+                            <h3 class="text-xl font-bold text-white">Renko Charting & Trend Strategy</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        Master noise-free, time-independent brick charting to trade trends, eliminate emotional noise, and catch long market runs with mathematical accuracy.
+                    </p>
+                    <ul class="space-y-3.5 text-slate-200">
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Renko Anatomy & Math:</strong> Brick size calculation (ATR vs. Traditional fixed points).</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Noise Elimination:</strong> Isolating pure price structure by detaching time factors.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Renko Reversal Setups:</strong> High probability 2-brick & 3-brick reversal entries.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>Trend-Following Strategy:</strong> Combining Renko with Moving Averages for trend confirmation.</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                            <span><strong>SMC on Renko:</strong> Using Renko structure for clean Bos, Choch, and Orderblock definitions.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Technical Analysis Module -->
+                <div class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-slate-100 text-brand-light p-3 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-chart-area text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Technical Analysis & Price Action</h3>
+                    </div>
+                    <ul class="space-y-3.5 text-slate-600">
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Market Trends & Structural Behaviour</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Advanced Demand, Supply & Zone Liquidity</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Candlestick Psychology & Advanced Chart Analysis</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Breakout & Retest Frameworks</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Golden Indicators, Fibonacci Retracements & Manipulation Scans</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Smart Money Concept Module -->
+                <div class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-slate-100 text-brand-light p-3 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-gem text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Smart Money Concepts (SMC)</h3>
+                    </div>
+                    <ul class="space-y-3.5 text-slate-600">
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Structure Shifts: CHOCH (Change of Character) & BOS (Break of Structure)</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Order Blocks, Breaker Blocks & Mitigation Zones</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Market Imbalance & Fair Value Gaps (FVG)</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Sonar Lab & Asian High-Low Strategies</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Complete End-to-End SMC Trading Setup blueprint</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ICT Concepts Module -->
+                <div class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-slate-100 text-brand-light p-3 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-compass text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Inner Circle Trader (ICT) Concepts</h3>
+                    </div>
+                    <ul class="space-y-3.5 text-slate-600">
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>PD Arrays - Premium, Discount & Equilibrium pricing</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Candle Range Theory - Power of 3 (Accumulation, Manipulation, Distribution)</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Turtle Soup - Buy Side Liquidity (BSL) & Sell Side Liquidity (SSL) Hunt</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Market Structure Shift (MSS), displacement & Inducement models</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>MMXM Model (Market Maker Buy & Sell Models)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Live Trading Execution Module -->
+                <div class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-slate-100 text-brand-light p-3 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-tower-broadcast text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Practical Live Trading Room</h3>
+                    </div>
+                    <ul class="space-y-3.5 text-slate-600">
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Live Analysis & Trade Execution in active market sessions</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Practical Backtesting & refining personal rules/styles</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Scalp vs. Swing identification on live structures</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span>Determining daily bias and execution mapping checklists</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Management & Tools Module -->
+                <div class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 hover:shadow-lg transition-all lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-slate-100 text-brand-light p-3 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Capital Protection & Resources</h3>
+                    </div>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600">
+                        <li class="flex items-start text-sm bg-slate-50 p-3 rounded-lg">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span><strong>Risk Management:</strong> Position sizing rules, Drawdown protections, and Risk-to-Reward (R:R) setups optimization.</span>
+                        </li>
+                        <li class="flex items-start text-sm bg-slate-50 p-3 rounded-lg">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span><strong>Fundamental Analysis:</strong> Understanding geopolitical narratives, economic interest rate models, and major news events triggers.</span>
+                        </li>
+                        <li class="flex items-start text-sm bg-slate-50 p-3 rounded-lg">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span><strong>Crypto Foundations:</strong> Deciphering blockchain history, holding/cold storage mechanisms, and high-growth altcoin valuations.</span>
+                        </li>
+                        <li class="flex items-start text-sm bg-slate-50 p-3 rounded-lg">
+                            <span class="text-brand-light mr-3 mt-1"><i class="fa-solid fa-circle-play"></i></span>
+                            <span><strong>Prop Firm Challenges:</strong> Strategic frameworks tailored to passing massive $100k-$200k funded evaluation accounts smoothly.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Benefits Banner -->
+        <section class="my-20 bg-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-light/20 to-slate-800/10 pointer-events-none"></div>
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold sm:text-4xl">Why Choose Mr Market ROI?</h2>
+                    <p class="mt-4 text-slate-300 leading-relaxed font-light">
+                        This is not just a course; it's a structural transformation for your financial independence goals. We are fully committed to your long-term success.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-4">
+                        <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm text-brand-light font-semibold"><i class="fa-solid fa-infinity mr-2"></i> Lifetime Access</span>
+                        <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg text-sm text-brand-light font-semibold"><i class="fa-solid fa-rotate mr-2"></i> Free 1-Year Re-joining</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                        <i class="fa-solid fa-people-group text-2xl text-brand-light mb-2"></i>
+                        <h4 class="font-bold text-white text-base">Private Community</h4>
+                        <p class="text-xs text-slate-400 mt-1">Get lifetime setup access and real-time community ideas.</p>
+                    </div>
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                        <i class="fa-solid fa-headset text-2xl text-brand-light mb-2"></i>
+                        <h4 class="font-bold text-white text-base">Personal Support</h4>
+                        <p class="text-xs text-slate-400 mt-1">Dedicated support channels directly to your mentors.</p>
+                    </div>
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                        <i class="fa-solid fa-video text-2xl text-brand-light mb-2"></i>
+                        <h4 class="font-bold text-white text-base">Recorded Backups</h4>
+                        <p class="text-xs text-slate-400 mt-1">Missed a session? Access class recordings whenever you want.</p>
+                    </div>
+                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-brand-light mb-2"></i>
+                        <h4 class="font-bold text-white text-base">Certification</h4>
+                        <p class="text-xs text-slate-400 mt-1">Get certified upon course challenge completion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFICIAL COMMUNITY HUB & LINKTREE PORTAL -->
+        <section id="community-hub" class="my-20 bg-[#0c243e] rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden border border-brand-light/30 shadow-xl">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.1),transparent)] pointer-events-none"></div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+                <div class="space-y-3">
+                    <span class="text-xs font-black uppercase tracking-widest text-brand-light bg-brand-light/15 border border-brand-light/30 px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-globe mr-1.5 animate-pulse"></i> Connect in Real Time
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Mr Market ROI Official Portal</h2>
+                    <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+                        Access our central hub for daily trade set-ups, high-probability community chart markups, and live market discussions. Follow our official Linktree below.
+                    </p>
+                </div>
+
+                <!-- Custom Embedded Linktree Hub Interface -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto pt-4">
+                    <!-- Telegram -->
+                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-sky-500/15 text-sky-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Join Free Telegram Channel</h4>
+                            <p class="text-xs text-slate-400">Daily markup charts and free live session updates</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-pink-500/15 text-pink-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Follow Official Instagram</h4>
+                            <p class="text-xs text-slate-400">Reels, market lessons, and trade breakdown analysis</p>
+                        </div>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-rose-500/15 text-rose-500 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Subscribe on YouTube</h4>
+                            <p class="text-xs text-slate-400">Weekly market previews and strategic webinars</p>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Portal -->
+                    <a href="https://wa.me/919586551955" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-emerald-500/15 text-emerald-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">WhatsApp Admissions desk</h4>
+                            <p class="text-xs text-slate-400">Chat directly with Ishanbir & Vanshika Rastogi</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Main Linktree CTA -->
+                <div class="pt-2">
+                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="inline-flex items-center space-x-2 bg-brand-light hover:bg-brand-emeraldDark text-white font-extrabold px-10 py-4 rounded-2xl text-md transition-all duration-200 shadow-xl shadow-brand-light/10">
+                        <i class="fa-solid fa-tree"></i>
+                        <span>Go to Official Linktree Page</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentors -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Meet Your Mentors</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
+                    Learn from professionals who trade the global markets actively.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Ishanbir Narula -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-6 sm:p-8 hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user-tie text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-950">Ishanbir Narula</h3>
+                                <p class="text-brand-light text-xs font-semibold">9+ Years Trading Experience</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            "I specialize majorly in scalping & day-trading with core focus on Price action, risk management & ICT concepts. I've my own devised strategies based on advanced technicals which vary & work instrument to instrument."
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed font-light italic">
+                            My aim is to make my students financially independent & dependable so that they do not have to work a 9-5!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vanshika Rastogi -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-6 sm:p-8 hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user-ninja text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-950">Vanshika Rastogi</h3>
+                                <p class="text-brand-light text-xs font-semibold">6+ Years Trading Experience</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            "Deeply passionate about trading & dedicated my career to mastering it. Specialization in 3 crucial areas: personal strategy development, advanced technicals & risk management which are essential for success."
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed font-light italic">
+                            My mantra is to treat trading like a business. This approach prevents excessive emotional highs from profits and demoralizing lows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">What Our Students Say</h2>
+                <p class="mt-4 text-slate-500">Real feedback from actual active traders in the community.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm italic leading-relaxed">
+                        "I joined Mr Market ROI mentorship program, and it's been great. The mentors are knowledgeable, offer personalized advice, and provide real-time feedback during live trading sessions."
+                    </p>
+                    <div class="mt-4 flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-600 flex items-center justify-center font-bold text-xs">HS</div>
+                        <span class="text-xs font-bold text-slate-900">HARSHBIR SINGH</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm italic leading-relaxed">
+                        "Pehle mujhe trading bohot complicated lagti thi, par Mr Market ROI ne ise itna simple aur accessible bana diya hai! Sabse acchi baat ye hai ki yeh sirf sikhate nahi, balki real trading scenarios ke through guide bhi karte hain."
+                    </p>
+                    <div class="mt-4 flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-600 flex items-center justify-center font-bold text-xs">SS</div>
+                        <span class="text-xs font-bold text-slate-900">SIDDHANT SETH</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm italic leading-relaxed">
+                        "Absolutely amazing! Got to learn so much from you and you guys are always there to help out at all times as well. The effort you've put into teaching us is actually commendable!"
+                    </p>
+                    <div class="mt-4 flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-600 flex items-center justify-center font-bold text-xs">L</div>
+                        <span class="text-xs font-bold text-slate-900">LAILA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE "ROI" CALCULATOR SECTION -->
+        <section id="calculator" class="py-16 px-6 sm:p-10 bg-slate-900 rounded-3xl text-white mb-20 relative overflow-hidden shadow-2xl border border-brand-light/20">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(16,185,129,0.1),transparent)] pointer-events-none"></div>
+            <div class="relative z-10">
+                <div class="text-center mb-12">
+                    <span class="text-xs uppercase font-extrabold tracking-widest text-brand-light">Interactive Risk Simulator</span>
+                    <h2 class="text-3xl font-extrabold mt-2">Test Your Trading ROI</h2>
+                    <p class="text-slate-400 max-w-xl mx-auto mt-2 text-sm">
+                        At <strong class="text-white">Mr Market ROI</strong>, we trade mathematically. Adjust the parameters below to see how win rates and risk-reward ratios build real portfolio growth.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Inputs Column -->
+                    <div class="lg:col-span-5 bg-slate-800/80 border border-slate-700/60 rounded-2xl p-6 space-y-6">
+                        <h3 class="text-lg font-bold text-white border-b border-slate-700/60 pb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-sliders text-brand-light"></i>
+                            Simulator Inputs
+                        </h3>
+
+                        <!-- Starting Capital -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <label class="text-slate-300 font-medium">Starting Account Balance</label>
+                                <span class="text-brand-light font-bold" id="lbl-balance">₹1,00,000</span>
+                            </div>
+                            <input type="range" id="inp-balance" min="10000" max="2500000" step="10000" value="100000" class="w-full accent-brand-light" oninput="calculateROI()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>₹10,000</span>
+                                <span>₹25,00,000</span>
+                            </div>
+                        </div>
+
+                        <!-- Risk % per Trade -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <label class="text-slate-300 font-medium">Risk Per Trade (%)</label>
+                                <span class="text-brand-light font-bold" id="lbl-risk">1%</span>
+                            </div>
+                            <input type="range" id="inp-risk" min="0.5" max="5" step="0.5" value="1" class="w-full accent-brand-light" oninput="calculateROI()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>0.5% (Recommended)</span>
+                                <span>5% (High Risk)</span>
+                            </div>
+                        </div>
+
+                        <!-- Target Reward Ratio (R:R) -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <label class="text-slate-300 font-medium">Risk-to-Reward Ratio (1 : X)</label>
+                                <span class="text-brand-light font-bold" id="lbl-reward">3.0x</span>
+                            </div>
+                            <input type="range" id="inp-reward" min="1" max="10" step="0.5" value="3" class="w-full accent-brand-light" oninput="calculateROI()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>1:1 (Breakeven Scale)</span>
+                                <span>1:10 (Advanced Sniper)</span>
+                            </div>
+                        </div>
+
+                        <!-- Projected Win Rate % -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <label class="text-slate-300 font-medium">Estimated Win Rate (%)</label>
+                                <span class="text-brand-light font-bold" id="lbl-win">45%</span>
+                            </div>
+                            <input type="range" id="inp-win" min="10" max="90" step="5" value="45" class="w-full accent-brand-light" oninput="calculateROI()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>10% (Novice)</span>
+                                <span>90% (Perfect Execution)</span>
+                            </div>
+                        </div>
+
+                        <!-- Sample Size Trades -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <label class="text-slate-300 font-medium">Number of Sample Trades</label>
+                                <span class="text-brand-light font-bold" id="lbl-trades">30 Trades</span>
+                            </div>
+                            <input type="range" id="inp-trades" min="10" max="100" step="5" value="30" class="w-full accent-brand-light" oninput="calculateROI()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>10 Trades</span>
+                                <span>100 Trades</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Outputs Column -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="bg-slate-800/45 border border-slate-700/60 rounded-2xl p-6 sm:p-8 space-y-6">
+                            <h3 class="text-lg font-bold text-white border-b border-slate-700/60 pb-3">Projection Dashboard</h3>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Net ROI Result Block -->
+                                <div class="bg-slate-900/90 border border-slate-700/50 rounded-xl p-5 text-center">
+                                    <span class="text-xs uppercase tracking-widest text-slate-400 block mb-1">Simulated Net ROI</span>
+                                    <div class="text-4xl font-extrabold text-brand-light text-glow" id="res-roi">+36.00%</div>
+                                    <p class="text-[10px] text-slate-400 mt-2">Calculated through systematic risk management laws.</p>
+                                </div>
+                                <!-- Ending Capital Block -->
+                                <div class="bg-slate-900/90 border border-slate-700/50 rounded-xl p-5 text-center">
+                                    <span class="text-xs uppercase tracking-widest text-slate-400 block mb-1">Ending Account Balance</span>
+                                    <div class="text-4xl font-extrabold text-white" id="res-capital">₹1,36,000</div>
+                                    <p class="text-[10px] text-slate-400 mt-2">Initial capital + net accumulated profits.</p>
+                                </div>
+                            </div>
+
+                            <!-- Trade metrics breakdown -->
+                            <div class="bg-slate-900/40 rounded-xl p-4 border border-slate-700/50 text-xs space-y-3">
+                                <div class="flex justify-between border-b border-slate-700/30 pb-2">
+                                    <span class="text-slate-400">Total Simulated Trades</span>
+                                    <span class="text-white font-bold" id="stat-total">30</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-700/30 pb-2">
+                                    <span class="text-brand-light">Successful Winning Trades</span>
+                                    <span class="text-brand-light font-bold" id="stat-wins">13.5 (13 Trades)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-700/30 pb-2">
+                                    <span class="text-rose-400">Losing Trades (Controlled Risks)</span>
+                                    <span class="text-rose-400 font-bold" id="stat-losses">16.5 (17 Trades)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Risk Mitigation Score</span>
+                                    <span class="text-brand-light font-bold" id="stat-health">Excellent (Safe)</span>
+                                </div>
+                            </div>
+
+                            <!-- Educational Alert/Takeaway -->
+                            <div class="bg-brand-light/10 border border-brand-light/30 p-4 rounded-xl flex gap-3">
+                                <div class="w-8 h-8 rounded-full bg-brand-light/20 text-brand-light flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-lightbulb text-sm"></i>
+                                </div>
+                                <div class="text-[11px] text-slate-300 space-y-1">
+                                    <span class="font-extrabold text-white uppercase block">The ROI Paradox Explained:</span>
+                                    <p>Notice how even with a **45% win rate** (losing more than half of your trades), you can achieve significant net profit! This is the power of a **3:1 Risk-to-Reward Ratio** taught inside <strong>Mr Market ROI</strong>. Protecting your downside is our highest priority.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Fee Section -->
+        <section id="fee-structure" class="scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Flexible Mentorship Options</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
+                    Invest in yourself with a structure tailored to your learning preferences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Online Course Card -->
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-slate-100 p-8 flex flex-col justify-between relative overflow-hidden hover:border-brand-light transition-all duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-xs font-extrabold tracking-widest uppercase px-3 py-1 bg-slate-100 text-slate-700 rounded-full">Online Batch</span>
+                            <span class="text-slate-400"><i class="fa-solid fa-globe text-2xl"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Online Mentorship</h3>
+                        <p class="text-slate-500 text-sm mb-6">Learn comfortably late evening online sessions with screen shares.</p>
+                        
+                        <div class="mb-6">
+                            <p class="text-xs text-slate-500 uppercase font-semibold">Mentorship Fee</p>
+                            <p class="text-4xl font-black text-slate-900">₹30,000 <span class="text-xs text-slate-400 font-normal">+ 18% GST</span></p>
+                            <p class="text-xs text-slate-500 mt-2">Booking Amount: <strong class="text-brand-light">₹15,000*</strong></p>
+                        </div>
+
+                        <hr class="border-slate-100 my-6">
+
+                        <ul class="space-y-3.5 text-slate-600 text-sm">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> 3 Classes Per Week (Late Evening)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> Video Recording Access (Lifetime)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> 2 Months Core Program Duration</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> Direct Live Charts Integration</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/919586551955?text=Hi!%20I%20want%20to%20enroll%20in%20the%20Mr%20Market%20ROI%20Online%20Mentorship%20program" class="block w-full text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl transition duration-200">
+                            Book Online Seat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Offline Course Card -->
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-light p-8 flex flex-col justify-between relative overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="absolute top-0 right-0 bg-brand-light text-white font-bold text-xs uppercase px-4 py-1.5 rounded-bl-xl tracking-widest">
+                        RECOMMENDED
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-xs font-extrabold tracking-widest uppercase px-3 py-1 bg-brand-light/10 text-brand-light rounded-full">Physical Batch</span>
+                            <span class="text-brand-light"><i class="fa-solid fa-building text-2xl"></i></span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Offline Live Training</h3>
+                        <p class="text-slate-500 text-sm mb-6">Live real-time trading directly from our state-of-the-art office workspace.</p>
+                        
+                        <div class="mb-6">
+                            <p class="text-xs text-slate-500 uppercase font-semibold">Mentorship Fee</p>
+                            <p class="text-4xl font-black text-slate-900">₹45,000 <span class="text-xs text-slate-400 font-normal">+ 18% GST</span></p>
+                            <p class="text-xs text-slate-500 mt-2">Booking Amount: <strong class="text-brand-light">₹22,500*</strong></p>
+                        </div>
+
+                        <hr class="border-slate-100 my-6">
+
+                        <ul class="space-y-3.5 text-slate-600 text-sm">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> 3 Interactive Office Classes Per Week</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> In-Person Practical Trading Assistance</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> Lifetime Live Trading Desk Access</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-light mr-2.5"></i> 2 Months Complete Offline Training</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/919586551955?text=Hi!%20I%20want%20to%20enroll%20in%20the%20Mr%20Market%20ROI%20Offline%20Mentorship%20program" class="block w-full text-center bg-brand-light hover:bg-brand-emeraldDark text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-md">
+                            Book Physical Seat
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-xl mx-auto text-center mt-8 space-y-2 text-xs text-slate-400 font-light">
+                <p>* Booking amounts are non-refundable. Balance payment is required after completing your first 7-10 classes.</p>
+                <p>* Prices mentioned are exclusive of 18% GST, which is charged on transactions.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Address / CTA -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <!-- Logo clone in Footer -->
+                    <svg class="w-8 h-8" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 250,50 A 200,200 0 0,0 148,422" stroke="#10b981" stroke-width="24" stroke-linecap="round" />
+                        <path d="M 148,422 A 200,200 0 0,0 352,422" stroke="#10b981" stroke-width="24" stroke-linecap="round" />
+                        <path d="M 352,422 A 200,200 0 0,0 320,58" stroke="#10b981" stroke-width="24" stroke-linecap="round" />
+                        <path d="M 100,250 L 100,150 L 180,150 L 230,230 L 280,150 L 300,150" stroke="#ffffff" stroke-width="32" stroke-linejoin="round"/>
+                        <path d="M 150,330 Q 250,280 400,120" stroke="#10b981" stroke-width="24" fill="none"/>
+                    </svg>
+                    <span class="text-xl font-extrabold tracking-tight text-white">Mr Market <span class="text-brand-light">ROI</span></span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    Transforming your market mindset with pure mechanical, rule-based advanced price structure strategies and Renko charts to find predictable consistency.
+                </p>
+                <p class="text-xs text-slate-400 font-semibold flex gap-3">
+                    <span><i class="fa-brands fa-instagram text-brand-light text-base mr-1.5"></i> @mrmarketroi</span>
+                    <span><i class="fa-solid fa-phone text-brand-light text-base mr-1.5"></i> +91 95865-51955</span>
+                </p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm">Headquarters Address</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light">
+                    221, Ground Floor, Okhla Phase 3,<br>
+                    Industrial Estate Okhla, New Delhi,<br>
+                    Delhi - 110020
+                </p>
+                <a href="https://maps.google.com/?q=221+Ground+Floor+Okhla+Phase+3+New+Delhi" target="_blank" class="inline-block text-xs text-brand-light hover:underline font-semibold mt-2">
+                    <i class="fa-solid fa-map-location-dot mr-1"></i> Click for Directions Map
+                </a>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm">Have Doubts? Talk with us</h4>
+                <p class="text-xs text-slate-400 leading-relaxed font-light text-slate-400">
+                    Get in touch to reserve a free live demonstration class before proceeding with any bookings.
+                </p>
+                <div class="flex flex-wrap gap-2 items-center">
+                    <a href="tel:+919586551955" class="text-white font-bold text-xs bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-lg border border-slate-700 transition flex items-center">
+                        <i class="fa-solid fa-phone mr-1.5 text-brand-light"></i> +91 95865-51955
+                    </a>
+                    <a href="tel:+919267967014" class="text-white font-bold text-xs bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-lg border border-slate-700 transition flex items-center">
+                        <i class="fa-solid fa-phone mr-1.5 text-brand-light"></i> +91 9267967014
+                    </a>
+                    <a href="https://wa.me/919586551955" target="_blank" class="text-white font-bold text-xs bg-emerald-950/40 hover:bg-emerald-900 border border-emerald-800 px-3.5 py-2 rounded-lg transition flex items-center">
+                        <i class="fa-brands fa-whatsapp mr-1.5 text-brand-light"></i> Chat Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+            © 2026 Mr Market ROI Mentorship Program. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // Trading ROI Risk Simulator Calculus
+        function calculateROI() {
+            // Retrieve parameters
+            const balance = parseFloat(document.getElementById('inp-balance').value);
+            const riskPercent = parseFloat(document.getElementById('inp-risk').value);
+            const rewardRatio = parseFloat(document.getElementById('inp-reward').value);
+            const winRate = parseFloat(document.getElementById('inp-win').value) / 100;
+            const totalTrades = parseInt(document.getElementById('inp-trades').value);
+
+            // Print Parameter labels
+            document.getElementById('lbl-balance').textContent = "₹" + balance.toLocaleString('en-IN');
+            document.getElementById('lbl-risk').textContent = riskPercent + "%";
+            document.getElementById('lbl-reward').textContent = rewardRatio.toFixed(1) + "x";
+            document.getElementById('lbl-win').textContent = Math.round(winRate * 100) + "%";
+            document.getElementById('lbl-trades').textContent = totalTrades + " Trades";
+
+            // Calculus
+            const winTradesCount = winRate * totalTrades;
+            const loseTradesCount = totalTrades - winTradesCount;
+
+            // Simple risk metrics (Net R wins minus losses)
+            const winAmountPerTrade = (riskPercent / 100) * rewardRatio;
+            const loseAmountPerTrade = (riskPercent / 100);
+
+            const totalRMultipleGained = (winTradesCount * winAmountPerTrade) - (loseTradesCount * loseAmountPerTrade);
+            const netROIPercent = totalRMultipleGained * 100;
+
+            const finalCapital = balance * (1 + totalRMultipleGained);
+
+            // Render Output values
+            const roiEl = document.getElementById('res-roi');
+            const capitalEl = document.getElementById('res-capital');
+
+            // Set colors based on positive/negative returns
+            if (netROIPercent >= 0) {
+                roiEl.textContent = "+" + netROIPercent.toFixed(2) + "%";
+                roiEl.className = "text-4xl font-extrabold text-brand-light text-glow";
+            } else {
+                roiEl.textContent = netROIPercent.toFixed(2) + "%";
+                roiEl.className = "text-4xl font-extrabold text-rose-500";
+            }
+
+            capitalEl.textContent = "₹" + Math.round(finalCapital).toLocaleString('en-IN');
+
+            // Render Stats Table
+            document.getElementById('stat-total').textContent = totalTrades;
+            document.getElementById('stat-wins').textContent = winTradesCount.toFixed(1) + " (" + Math.round(winTradesCount) + " Trades)";
+            document.getElementById('stat-losses').textContent = loseTradesCount.toFixed(1) + " (" + Math.round(loseTradesCount) + " Trades)";
+
+            // Health status grading
+            const healthEl = document.getElementById('stat-health');
+            if (riskPercent > 3) {
+                healthEl.textContent = "High Risk (Unsafe Over-Leverage)";
+                healthEl.className = "text-rose-500 font-bold";
+            } else if (netROIPercent < 0) {
+                healthEl.textContent = "Negative ROI (Needs adjustments)";
+                healthEl.className = "text-yellow-500 font-bold";
+            } else if (winRate < 0.3) {
+                healthEl.textContent = "Low Win Rate (Needs high discipline)";
+                healthEl.className = "text-yellow-500 font-bold";
+            } else {
+                healthEl.textContent = "Professional & Safe (Excellent)";
+                healthEl.className = "text-brand-light font-bold";
+            }
+        }
+
+        // Initialize elements onload
+        window.onload = function() {
+            calculateROI();
+        }
+    </script>
+</body>
+</html>
