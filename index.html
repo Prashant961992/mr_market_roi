@@ -57,10 +57,11 @@
 
     <!-- Header / Nav -->
     <header class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-2 flex-shrink-0">
                 <!-- Mr Market ROI SVG Vector Logo Representation -->
-                <svg class="w-10 h-10" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-8 h-8 sm:w-10 sm:h-10" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- Outer incomplete circle -->
                     <path d="M 250,50 A 200,200 0 0,0 148,422" stroke="#0f2b48" stroke-width="22" stroke-linecap="round" />
                     <path d="M 148,422 A 200,200 0 0,0 352,422" stroke="url(#greenGradient)" stroke-width="22" stroke-linecap="round" />
@@ -80,20 +81,15 @@
                     <path d="M 440,320 L 420,320 M 440,320 L 460,320" stroke="#10b981" stroke-width="18" stroke-linecap="round"/>
                     
                     <!-- Financial Candlesticks inside (Rising) -->
-                    <!-- Stick 1 -->
                     <line x1="215" y1="280" x2="215" y2="330" stroke="#0f2b48" stroke-width="5" />
                     <rect x="205" y="295" width="20" height="25" fill="#0f2b48" rx="2" />
-                    <!-- Stick 2 -->
                     <line x1="250" y1="250" x2="250" y2="310" stroke="#10b981" stroke-width="5" />
                     <rect x="240" y="265" width="20" height="30" fill="#10b981" rx="2" />
-                    <!-- Stick 3 -->
                     <line x1="285" y1="230" x2="285" y2="290" stroke="#10b981" stroke-width="5" />
                     <rect x="275" y="245" width="20" height="30" fill="#10b981" rx="2" />
-                    <!-- Stick 4 -->
                     <line x1="320" y1="210" x2="320" y2="270" stroke="#0f2b48" stroke-width="5" />
                     <rect x="310" y="225" width="20" height="30" fill="#0f2b48" rx="2" />
                     
-                    <!-- Definitions for gradients -->
                     <defs>
                         <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#10b981" />
@@ -101,27 +97,36 @@
                         </linearGradient>
                     </defs>
                 </svg>
-                <span class="text-xl font-extrabold tracking-tight text-slate-900">Mr Market <span class="text-brand-light">ROI</span></span>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="#services" class="hidden md:flex items-center space-x-1 font-bold text-xs text-slate-600 hover:text-brand-light transition mr-2">
-                    <i class="fa-solid fa-cubes text-brand-light"></i>
-                    <span>Our Services</span>
+                <span class="text-sm xs:text-base sm:text-xl font-extrabold tracking-tight text-slate-900">Mr Market <span class="text-brand-light">ROI</span></span>
+            </a>
+
+            <!-- Adaptive Responsive Navigation Links -->
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <!-- Our Services -->
+                <a href="#services" class="flex items-center space-x-1 font-bold text-[11px] sm:text-xs text-slate-600 hover:text-brand-light transition duration-150">
+                    <i class="fa-solid fa-cubes text-brand-light text-sm"></i>
+                    <span class="hidden md:inline">Our Services</span>
                 </a>
-                <a href="#community-hub" class="hidden md:flex items-center space-x-1 font-bold text-xs text-slate-600 hover:text-brand-light transition mr-2">
-                    <i class="fa-solid fa-users text-brand-light"></i>
-                    <span>Community Links</span>
+                <!-- Community Links -->
+                <a href="#community-hub" class="flex items-center space-x-1 font-bold text-[11px] sm:text-xs text-slate-600 hover:text-brand-light transition duration-150">
+                    <i class="fa-solid fa-users text-brand-light text-sm"></i>
+                    <span class="hidden md:inline">Community Links</span>
                 </a>
-                <a href="#calculator" class="hidden lg:flex items-center space-x-1.5 text-xs font-bold text-slate-600 hover:text-brand-light transition mr-2">
+                <!-- ROI Calculator -->
+                <a href="#calculator" class="flex items-center space-x-1.5 font-bold text-[11px] sm:text-xs text-slate-600 hover:text-brand-light transition duration-150">
                     <span class="relative flex h-2 w-2">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-light opacity-75"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-light"></span>
                     </span>
-                    <span>ROI Calculator</span>
+                    <span class="hidden md:inline">ROI Calculator</span>
+                    <span class="inline md:hidden"><i class="fa-solid fa-calculator text-brand-light text-sm"></i></span>
                 </a>
-                <a href="https://wa.me/919586551955" target="_blank" class="bg-brand-light hover:bg-brand-emeraldDark text-white font-semibold px-4 py-2 rounded-lg transition duration-200 flex items-center space-x-2 text-sm shadow-md">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Free Demo Class</span>
+                
+                <!-- CTA Button -->
+                <a href="https://wa.me/919586551955" target="_blank" class="bg-brand-light hover:bg-brand-emeraldDark text-white font-bold px-2.5 sm:px-4 py-2 rounded-lg transition duration-200 flex items-center space-x-1.5 text-xs sm:text-sm shadow-md flex-shrink-0">
+                    <i class="fa-brands fa-whatsapp text-sm sm:text-base"></i>
+                    <span class="hidden sm:inline">Free Demo</span>
+                    <span class="inline sm:hidden">Demo</span>
                 </a>
             </div>
         </div>
@@ -142,7 +147,7 @@
                 <a href="#services" class="w-full sm:w-auto bg-brand-light hover:bg-brand-emeraldDark text-white font-bold px-8 py-3.5 rounded-xl transition duration-200 shadow-lg text-center">
                     Explore Services & Systems
                 </a>
-                <a href="#curriculum" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition duration-200 text-center">
+                <a href="#curriculum" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-755 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition duration-200 text-center">
                     View Syllabus
                 </a>
                 <a href="#calculator" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-3.5 rounded-xl transition duration-200 text-center flex items-center justify-center gap-2">
@@ -252,7 +257,7 @@
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Cryptocurrency Market Fundamentals</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Technical & Advanced Price Action</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Spot vs. Futures Trading Blueprints</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Psychological Discipline and Habits</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Trading Psychology & Discipline</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-light mr-2"></i> Cold Storage Security & Web3 Basics</li>
                         </ul>
                     </div>
@@ -617,53 +622,75 @@
                     </span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Mr Market ROI Official Portal</h2>
                     <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                        Access our central hub for daily trade set-ups, high-probability community chart markups, and live market discussions. Follow our official Linktree below.
+                        Access our central hubs directly. Connect with over 2,250+ active global traders, analyze charts daily, and monitor institutional risk models.
                     </p>
                 </div>
 
-                <!-- Custom Embedded Linktree Hub Interface -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto pt-4">
-                    <!-- Telegram -->
-                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-sky-500/15 text-sky-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                <!-- Custom Embedded Linktree Hub Interface (UPDATED SOCIAL CHANNELS) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto pt-4">
+                    <!-- Telegram Community -->
+                    <a href="https://t.me/mmr_trader_circle" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-sky-500/15 text-sky-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
                             <i class="fa-brands fa-telegram"></i>
                         </div>
                         <div class="text-left">
-                            <h4 class="font-bold text-sm">Join Free Telegram Channel</h4>
-                            <p class="text-xs text-slate-400">Daily markup charts and free live session updates</p>
+                            <h4 class="font-bold text-sm">Telegram Community</h4>
+                            <p class="text-xs text-slate-400">Join our MMR Trader Circle group</p>
                         </div>
                     </a>
                     
-                    <!-- Instagram -->
-                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-pink-500/15 text-pink-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                    <!-- Instagram Page -->
+                    <a href="https://www.instagram.com/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-pink-500/15 text-pink-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                         <div class="text-left">
-                            <h4 class="font-bold text-sm">Follow Official Instagram</h4>
-                            <p class="text-xs text-slate-400">Reels, market lessons, and trade breakdown analysis</p>
+                            <h4 class="font-bold text-sm">Official Instagram</h4>
+                            <p class="text-xs text-slate-400">Education reels & markup sessions</p>
                         </div>
                     </a>
 
-                    <!-- YouTube -->
-                    <a href="https://linktr.ee/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-rose-500/15 text-rose-500 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                    <!-- YouTube Channel -->
+                    <a href="https://www.youtube.com/@mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-rose-500/15 text-rose-500 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
                             <i class="fa-brands fa-youtube"></i>
                         </div>
                         <div class="text-left">
-                            <h4 class="font-bold text-sm">Subscribe on YouTube</h4>
-                            <p class="text-xs text-slate-400">Weekly market previews and strategic webinars</p>
+                            <h4 class="font-bold text-sm">YouTube Channel</h4>
+                            <p class="text-xs text-slate-400">Macro breakdowns & master webinars</p>
                         </div>
                     </a>
 
-                    <!-- WhatsApp Portal -->
+                    <!-- Threads Page -->
+                    <a href="https://www.threads.net/@realquant.trader" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-slate-800 text-slate-200 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
+                            <i class="fa-brands fa-threads"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Threads Page</h4>
+                            <p class="text-xs text-slate-400">Daily market wisdom & insights</p>
+                        </div>
+                    </a>
+
+                    <!-- X (Twitter) Page -->
+                    <a href="https://x.com/mr_market_roi" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-slate-950 text-white rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">X (Twitter) Profile</h4>
+                            <p class="text-xs text-slate-400">Real-time alerts & macro updates</p>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Desk -->
                     <a href="https://wa.me/919586551955" target="_blank" class="flex items-center space-x-4 bg-slate-900/80 border border-slate-700/60 p-4 rounded-2xl hover:border-brand-light hover:bg-[#10b981]/10 transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-emerald-500/15 text-emerald-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition">
+                        <div class="w-12 h-12 bg-emerald-500/15 text-emerald-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition flex-shrink-0">
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                         <div class="text-left">
-                            <h4 class="font-bold text-sm">WhatsApp Admissions Desk</h4>
-                            <p class="text-xs text-slate-400">Chat directly with Prashant & Nikita Prajapati</p>
+                            <h4 class="font-bold text-sm">WhatsApp Admissions</h4>
+                            <p class="text-xs text-slate-400">Direct query & batch allocations</p>
                         </div>
                     </a>
                 </div>
@@ -906,7 +933,6 @@
                             <div class="bg-brand-light/10 border border-brand-light/30 p-4 rounded-xl flex gap-3">
                                 <div class="w-8 h-8 rounded-full bg-brand-light/20 text-brand-light flex items-center justify-center flex-shrink-0">
                                     <i class="fa-solid fa-lightbulb text-sm"></i>
-                                end
                                 </div>
                                 <div class="text-[11px] text-slate-300 space-y-1">
                                     <span class="font-extrabold text-white uppercase block">The ROI Paradox Explained:</span>
@@ -1021,7 +1047,7 @@
                 <p class="text-xs text-slate-400 leading-relaxed font-light">
                     Transforming your market mindset with pure mechanical, rule-based advanced price structure strategies and Bricks charts to find predictable consistency.
                 </p>
-                <p class="text-xs text-slate-400 font-semibold flex gap-3">
+                <p class="text-xs text-slate-400 font-semibold flex flex-wrap gap-x-4 gap-y-1">
                     <span><i class="fa-brands fa-instagram text-brand-light text-base mr-1.5"></i> @mrmarketroi</span>
                     <span><i class="fa-solid fa-phone text-brand-light text-base mr-1.5"></i> +91 95865-51955</span>
                 </p>
